@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>TOMtie's</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+ 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  	<link rel="stylesheet" type="text/css" href="css/style.css">
+  	<link rel="stylesheet" type="text/css" href="css/paymentStyle.css">
+</head>
+<body>
+	<div class="firstSection">
+		<header> 
+		<div class="container">
+		<div class="row">
+			<div class="col-sm-3 logo">
+				<a href="index.html"><img src="images/logo.png" alt="TOMtie's logo"></a>
+			</div>
+			<div class="col-sm-6 text">
+				The first step to be respected is to look respectable
+			</div>
+			<div class="col-sm-3 logos">
+				<ul class="nav navbar-nav navbar-right hidden-xs">
+					<li class="active">
+						<a href="index.html">
+							<i class="fa fa-home fa-2x" aria-hidden="true"></i>
+							<p>Home</p>
+						</a>
+					</li>
+					<li>
+						<a href="payment.html">
+							<i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+							<p>Cosul meu</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+			</div>
+			</div>
+		</header>
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<div class="logos hidden-lg hidden-md hidden-sm">
+						<ul class="nav navbar-nav navbar-right">
+							<li class="active">
+								<a href="index.html">
+									<i class="fa fa-home fa-1x" aria-hidden="true"></i>
+								</a>
+							</li>
+							<li>
+								<a href="payment.html">
+									<i class="fa fa-shopping-cart fa-1x" aria-hidden="true"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+					</button>
+				</div><!-- navbar-header -->
+				<div class="collapse navbar-collapse" id="navbar">
+					<ul class="nav navbar-nav">
+						<li><a href="ties.html">Cravate</a></li>
+						<li><a href="handkerchiefs.html">Batiste</a></li>
+						<li><a href="socks.html">Sosete</a></li>
+					</ul>
+				</div><!-- navbar-collapse -->
+			</div><!-- container-fluid -->
+		</nav>
+	</div>
+	
+	<div class="payment">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-sm-offset-3">
+					<form>
+						<div class="col-md-6 col-xs-12">
+							<div class="form-group">
+							<label for="inputName">Numele</label>
+							<input class="form-control" type="text" id="inputName" placeholder="Ex:Ionescu">
+							</div>
+						</div>
+						<div class="col-md-6 col-xs-12">
+							<div class="form-group">
+							<label for="inputSurname">Prenumele</label>
+							<input class="form-control" type="text" id="inputSurname" placeholder="Ex:George">
+						</div>
+						</div>
+						<div class="col-xs-12 col-sm-7">
+							<div class="form-group">
+								<label for="creditNumber">Credit Number</label>
+								<input class="form-control" type="number" id="creditNumber" placeholder="1243 2132 6332 ****">
+							</div>
+					    </div>
+
+					    <div class="col-xs-12 col-sm-3">
+					    	<div class="form-group">
+					    		<label for="expiration">Expiration date</label>
+					    		<input class="form-control" type="number" id="expiration" placeholder="MM/YY">
+					    	</div>
+					    </div>
+					    <div class="col-xs-12 col-sm-2">
+					    	<div class="form-group">
+					    		<label for="cvc">CVC</label>
+					    		<input class="form-control" type="number" id="cvc" placeholder="111">
+					    	</div>
+					    </div>
+					    <div class="col-sm-6 col-sm-offset-3">
+					    <input type="submit" class="btn btn-block btn-success btn-round text-center" value="Submit">
+					    </div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+			<p>TOMtie's 2017&copy;</p>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+	<script src="js/myscript.js"></script>
+</body>
+</html>

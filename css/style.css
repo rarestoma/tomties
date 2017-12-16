@@ -1,0 +1,406 @@
+@import url("https://fonts.googleapis.com/css?family=Pacifico|Montserrat:300,400|Roboto|Acme|Pacifico|Fascinate+Inline");
+.sectionCard {
+  background: white;
+  height: 450px;
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+  position: relative; }
+
+.card {
+  position: absolute;
+  top: 100%;
+  height: 400px;
+  width: 300px;
+  margin-top: 0%;
+  border-radius: 10px;
+  z-index: 4;
+  background: transparent;
+  top: 30px;
+  border-radius: 10px;
+  background-position: center center !important;
+  background-size: cover !important;
+  box-shadow: 1px 0 20px 1px rgba(0, 0, 0, 0.1);
+  border: 1px solid white;
+  transition: transform 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
+  overflow: hidden; }
+  .card:after {
+    content: '';
+    background: white;
+    background: -moz-linear-gradient(top, white 0%, black 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, black));
+    background: -webkit-linear-gradient(top, white 0%, black 100%);
+    background: -o-linear-gradient(top, white 0%, black 100%);
+    background: -ms-linear-gradient(top, white 0%, black 100%);
+    background: linear-gradient(to bottom, white 0%, black 100%);
+    background-size: 150% 150%;
+    position: absolute;
+    opacity: 0.4;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px; }
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 12px 19px -7px rgba(0, 0, 0, 0.3); }
+
+.card-first {
+  margin-left: 7%;
+  background: url("../images/card1.jpg"); }
+
+.card-second {
+  margin-left: 38%;
+  background: url("../images/card2.jpg"); }
+
+.card-third {
+  margin-left: 70%;
+  background: url("../images/card3.jpg"); }
+
+.card-header .title {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  position: absolute;
+  width: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  padding: 5px;
+  background: rgba(0, 0, 0, 0.7);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px; }
+  .card-header .title p {
+    margin: 0;
+    font-weight: 600; }
+.card-header .price {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(0, 0, 0, 0.5);
+  font-family: 'Montserrat';
+  font-size: 50px;
+  z-index: 4;
+  padding: 25px 10px;
+  background: white;
+  border-radius: 50%;
+  font-weight: 300;
+  border: 2px solid grey; }
+  .card-header .price span {
+    font-size: 30px;
+    font-weight: 500; }
+
+.card-content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%);
+  padding: 0;
+  color: white;
+  text-align: center;
+  background: white;
+  width: 100%;
+  height: 100%; }
+  .card-content p {
+    font-size: 22px;
+    font-family: 'Pacifico'; }
+
+.linear-gradient {
+  background: linear-gradient(to bottom, white 0%, #344755 100%);
+  min-height: 500px; }
+
+body {
+  background-color: #ffffff;
+  background-repeat: repeat-x;
+  font-size: 16px;
+  overflow-x: hidden; }
+  body .firstSection {
+    background-image: url("../images/mountain.jpg");
+    background-size: cover;
+    height: 100vh;
+    z-index: 1;
+    position: relative; }
+    body .firstSection header {
+      padding: 20px;
+      position: absolute;
+      width: 100%;
+      top: 0; }
+      body .firstSection header .logo {
+        z-index: 5;
+        float: left; }
+        body .firstSection header .logo img {
+          width: 200px;
+          position: absolute;
+          z-index: 3; }
+      body .firstSection header .logos li a {
+        color: #efefef;
+        margin-right: 40px;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 14px; }
+        body .firstSection header .logos li a:hover {
+          background: inherit; }
+    body .firstSection .mainText {
+      text-align: center;
+      font-family: 'Pacifico';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 3;
+      transform: translate(-50%, -50%); }
+      body .firstSection .mainText h1 {
+        font-size: 27px;
+        font-family: serif;
+        position: absolute;
+        width: 900px;
+        top: 75px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-family: 'Montserrat';
+        color: #ffffff; }
+      body .firstSection .mainText h2 {
+        font-size: 66px;
+        color: white;
+        margin-bottom: 30px;
+        background: linear-gradient(to bottom, white 35%, #9A9A9A 100%);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text; }
+      body .firstSection .mainText p a {
+        font-size: 30px; }
+    body .firstSection::after {
+      content: '';
+      background: white;
+      background: -moz-linear-gradient(top, white 0%, black 100%);
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, black));
+      background: -webkit-linear-gradient(top, white 0%, black 100%);
+      background: -o-linear-gradient(top, white 0%, black 100%);
+      background: -ms-linear-gradient(top, white 0%, black 100%);
+      background: linear-gradient(to bottom, white 0%, black 100%);
+      background-size: 150% 150%;
+      position: absolute;
+      opacity: 0.3;
+      z-index: 2;
+      height: 100vh;
+      width: 100%; }
+  body .navbar-default {
+    background-color: rgba(0, 0, 0, 0.4);
+    border: none;
+    padding: 10px 0;
+    text-align: center;
+    margin: 0; }
+    body .navbar-default .navbar-nav {
+      float: none;
+      display: inline-block; }
+      body .navbar-default .navbar-nav li {
+        border-right: 1px solid white; }
+        body .navbar-default .navbar-nav li a {
+          font-size: 2.5em;
+          color: white;
+          font-family: 'Pacifico';
+          margin: auto 85px; }
+          body .navbar-default .navbar-nav li a:after {
+            content: '';
+            opacity: 0;
+            width: 0;
+            height: 0;
+            border: 6px solid white;
+            border-radius: 6px;
+            display: inline-block;
+            position: absolute;
+            right: 50%;
+            transform: translateX(50%);
+            top: 100%;
+            transition: 0.3s ease; }
+          body .navbar-default .navbar-nav li a:hover {
+            color: white; }
+      body .navbar-default .navbar-nav li:last-child {
+        border-right: none; }
+  body .carousel-caption {
+    padding-bottom: 120px; }
+    body .carousel-caption h2 {
+      font-size: 45px;
+      font-family: 'Pacifico'; }
+    body .carousel-caption a {
+      font-size: 30px; }
+  body .carousel-inner .item img {
+    height: 450px;
+    width: 100%; }
+  body .sectionInfo {
+    margin: 0px auto;
+    background: linear-gradient(to bottom, #344755 0%, white 100%);
+    z-index: 2;
+    height: 400px; }
+    body .sectionInfo .sectionInfoText {
+      text-align: center; }
+      body .sectionInfo .sectionInfoText h2 {
+        font-family: 'Acme'; }
+        body .sectionInfo .sectionInfoText h2 span {
+          font-weight: 600; }
+      body .sectionInfo .sectionInfoText h4 {
+        font-family: 'Pacifico'; }
+      body .sectionInfo .sectionInfoText p {
+        font-family: 'Pacifico';
+        padding: 20px;
+        font-size: 27px; }
+    body .sectionInfo .sectionInfoImage {
+      width: 100%;
+      background-color: white;
+      box-shadow: 0px 1px 40px 0px rgba(0, 0, 0, 0.5); }
+      body .sectionInfo .sectionInfoImage img {
+        width: 100%;
+        padding: 5px; }
+  body footer {
+    text-align: center;
+    font-family: 'sans-serif';
+    padding: 1em 0;
+    border-top: 1px solid grey;
+    margin: 600px 100px 0; }
+    body footer img:first-child {
+      position: absolute;
+      top: 385px;
+      z-index: 2;
+      width: 100%;
+      opacity: 0.8; }
+    body footer img:nth-child(2) {
+      position: absolute;
+      left: -65px;
+      height: 365px;
+      width: 1000px;
+      top: 510px;
+      z-index: 2; }
+    body footer img:nth-child(3) {
+      position: absolute;
+      left: 300px;
+      width: 345px;
+      height: 145px;
+      position: absolute;
+      top: 580px;
+      z-index: 2;
+      opacity: 1; }
+  @media (min-width: 768px) and (max-width: 992px) {
+    body .firstSection header .text {
+      text-align: center;
+      float: left;
+      padding-top: 0; }
+    body .firstSection header .logos .navbar-right {
+      margin-top: 0; }
+      body .firstSection header .logos .navbar-right li a {
+        font-size: 11px; }
+    body .navbar-default .navbar-nav li a {
+      font-size: 1.5em;
+      margin: auto 60px; } }
+  @media (min-width: 992px) and (max-width: 1200px) {
+    body .firstSection header .text {
+      padding-top: 0; }
+    body .firstSection header .logos .navbar-right {
+      margin-top: 0; }
+      body .firstSection header .logos .navbar-right li a {
+        font-size: 11px; } }
+  @media (max-width: 767px) {
+    body .firstSection header .logo img {
+      width: 400px; }
+    body .firstSection header .text {
+      text-align: center;
+      float: none; }
+    body .firstSection .navbar-default .logos {
+      float: left; }
+      body .firstSection .navbar-default .logos .navbar-right {
+        margin-right: 0;
+        margin-top: 6px; }
+        body .firstSection .navbar-default .logos .navbar-right li {
+          margin: 0;
+          float: left; }
+          body .firstSection .navbar-default .logos .navbar-right li :hover {
+            color: grey;
+            background-color: inherit; }
+          body .firstSection .navbar-default .logos .navbar-right li a {
+            text-decoration: none;
+            background-color: transparent;
+            color: darkgrey;
+            margin: 0; }
+            body .firstSection .navbar-default .logos .navbar-right li a .fa-shopping-bag {
+              font-size: 37px; }
+            body .firstSection .navbar-default .logos .navbar-right li a p {
+              margin: 3px 0 0 0; }
+        body .firstSection .navbar-default .logos .navbar-right li:first-child {
+          padding: 0 0 0 30px; }
+    body .firstSection .navbar-default .navbar-toggle {
+      margin-top: 20px; }
+    body .firstSection .navbar-default .navbar-nav li {
+      border-right: none; }
+      body .firstSection .navbar-default .navbar-nav li a {
+        margin: auto 20px; }
+    body .firstSection .mainText {
+      text-align: center;
+      font-family: 'Pacifico';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 3;
+      transform: translate(-50%, -50%); }
+      body .firstSection .mainText h2 {
+        font-size: 30px;
+        color: white; }
+      body .firstSection .mainText p a {
+        font-size: 15px; } }
+
+.animated1 {
+  top: 30px;
+  left: 10px;
+  position: absolute;
+  -webkit-animation-name: example;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-delay: 2s;
+  /* Safari 4.0 - 8.0 */
+  animation-name: example1;
+  animation-duration: 60s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  height: 200px;
+  width: 510px;
+  opacity: 0.8; }
+
+.animated2 {
+  top: -10px;
+  left: -145px;
+  position: absolute;
+  -webkit-animation-name: example;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-delay: 2s;
+  /* Safari 4.0 - 8.0 */
+  animation-name: example2;
+  animation-duration: 60s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  opacity: 0.4; }
+
+.animated3 {
+  top: 10px;
+  left: 140px;
+  position: absolute;
+  -webkit-animation-name: example;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-delay: 2s;
+  /* Safari 4.0 - 8.0 */
+  animation-name: example3;
+  animation-duration: 60s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  opacity: 0.7;
+  height: 130px; }
+
+@keyframes example1 {
+  40% {
+    transform: translateX(90px); } }
+@keyframes example2 {
+  40% {
+    transform: translateX(-60px); } }
+@keyframes example3 {
+  40% {
+    transform: translateX(-60px); } }
+
+/*# sourceMappingURL=style.css.map */

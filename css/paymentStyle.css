@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto|Acme|Pacifico|Fascinate+Inline");
+body .firstSection {
+  background: url("../images/logos.jpg");
+  background-position: center center;
+  background-size: cover; }
+body .payment {
+  padding: 110px 0;
+  font-family: 'Acme';
+  text-align: center; }
+  body .payment .form-group {
+    text-align: left; }
+  body .payment .btn {
+    background-color: transparent;
+    color: black; }
+@media (max-width: 768px) {
+  body .payment .form-group {
+    text-align: center; } }
+
+/*# sourceMappingURL=paymentStyle.css.map */
